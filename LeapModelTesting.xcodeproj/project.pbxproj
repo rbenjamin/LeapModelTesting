@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B51662CE2F64A058009064BF /* LeapSDK in Frameworks */ = {isa = PBXBuildFile; productRef = B51662CD2F64A058009064BF /* LeapSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B51662B02F649FDA009064BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51662CE2F64A058009064BF /* LeapSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = LeapModelTesting;
 			packageProductDependencies = (
+				B51662CD2F64A058009064BF /* LeapSDK */,
 			);
 			productName = LeapModelTesting;
 			productReference = B51662A22F649FD6009064BF /* LeapModelTesting.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = B51662992F649FD6009064BF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B51662CC2F64A057009064BF /* XCRemoteSwiftPackageReference "leap-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B51662A32F649FD6009064BF /* Products */;
 			projectDirPath = "";
@@ -400,6 +409,7 @@
 				DEVELOPMENT_TEAM = 54YTE3BLBX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "OCR Photo Conversion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +442,7 @@
 				DEVELOPMENT_TEAM = 54YTE3BLBX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "OCR Photo Conversion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B51662CC2F64A057009064BF /* XCRemoteSwiftPackageReference "leap-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Liquid4All/leap-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B51662CD2F64A058009064BF /* LeapSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51662CC2F64A057009064BF /* XCRemoteSwiftPackageReference "leap-ios" */;
+			productName = LeapSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B516629A2F649FD6009064BF /* Project object */;
 }
